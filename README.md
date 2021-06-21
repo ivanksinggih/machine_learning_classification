@@ -1,46 +1,18 @@
-# Steel Plate Defect Detection
+# Semiconductor Operation Test
 
-Source: https://www.kaggle.com/bpkapkar/steel-plates-faults-detection?select=Variable+Descriptor.txt  
-
-Input data: 27 features  
-V1: X_Minimum  
-V2: X_Maximum  
-V3: Y_Minimum  
-V4: Y_Maximum  
-V5: Pixels_Areas  
-V6: X_Perimeter  
-V7: Y_Perimeter  
-V8: Sum_of_Luminosity  
-V9: Minimum_of_Luminosity  
-V10: Maximum_of_Luminosity  
-V11: Length_of_Conveyer  
-V12: TypeOfSteel_A300  
-V13: TypeOfSteel_A400  
-V14: Steel_Plate_Thickness  
-V15: Edges_Index  
-V16: Empty_Index  
-V17: Square_Index  
-V18: Outside_X_Index  
-V19: Edges_X_Index  
-V20: Edges_Y_Index  
-V21: Outside_Global_Index  
-V22: LogOfAreas  
-V23: Log_X_Index  
-V24: Log_Y_Index  
-V25: Orientation_Index   
-V26: Luminosity_Index  
-V27: SigmoidOfAreas  
+Source: https://www.kaggle.com/paresh2047/uci-semcom?select=uci-secom.csv  
   
-Output data: 6 types of defects  
-V28: Pastry  
-V29: Z_Scratch  
-V30: K_Scatch  
-V31: Stains  
-V32: Dirtiness  
-V33: Bumps
-
-![image](https://user-images.githubusercontent.com/42261330/122784006-09e4be00-d2ed-11eb-9903-0a3b383be229.png)
-
-Analysis points:  
-- Given the input data information, how to automatically detect type of defects.  
-- Show the priority of each input data for detecting the defect (operators might focus more on controlling such input variables).
+The data are collected using continuously observing sensors in a complex semiconductor manufacturing system.  
+- Some input features are irrelevant, and can be considered as noise.  
+- Engineers typically have a much larger number of signals than are actually required.  
+It is necessary to perform feature selection to identify the most relevant signals.  
+- The Process Engineers may then use these signals to determine key factors contributing to yield excursions downstream in the process.  
+- This will enable an increase in process throughput, decreased time to learning and reduce the per unit production costs.  
+Input data: 590 features, Output data: pass/fail information (in house line testing)  
+  
+![image](https://user-images.githubusercontent.com/42261330/122785883-b6736f80-d2ee-11eb-89c4-9bf928001d9e.png)
+  
+Analysis points: Generate various prediction models after removing empty values:  
+- Model 1: Using all features (columns), but only complete records (rows)  
+- Model 2: Removing all features (columns) with any empty values and all records (rows)  
+- Model 3: Any model with some selected features and records. Select important features from Model 1
