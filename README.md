@@ -1,46 +1,31 @@
-# Steel Plate Defect Detection
+# Pickup Machine Error Detection
 
-Source: https://www.kaggle.com/bpkapkar/steel-plates-faults-detection?select=Variable+Descriptor.txt  
-
-Input data: 27 features  
-V1: X_Minimum  
-V2: X_Maximum  
-V3: Y_Minimum  
-V4: Y_Maximum  
-V5: Pixels_Areas  
-V6: X_Perimeter  
-V7: Y_Perimeter  
-V8: Sum_of_Luminosity  
-V9: Minimum_of_Luminosity  
-V10: Maximum_of_Luminosity  
-V11: Length_of_Conveyer  
-V12: TypeOfSteel_A300  
-V13: TypeOfSteel_A400  
-V14: Steel_Plate_Thickness  
-V15: Edges_Index  
-V16: Empty_Index  
-V17: Square_Index  
-V18: Outside_X_Index  
-V19: Edges_X_Index  
-V20: Edges_Y_Index  
-V21: Outside_Global_Index  
-V22: LogOfAreas  
-V23: Log_X_Index  
-V24: Log_Y_Index  
-V25: Orientation_Index   
-V26: Luminosity_Index  
-V27: SigmoidOfAreas  
+Source: https://www.kaggle.com/emilblixthansen/aicd-dataset
   
-Output data: 6 types of defects  
-V28: Pastry  
-V29: Z_Scratch  
-V30: K_Scatch  
-V31: Stains  
-V32: Dirtiness  
-V33: Bumps
-
-![image](https://user-images.githubusercontent.com/42261330/122784006-09e4be00-d2ed-11eb-9903-0a3b383be229.png)
+The machine is a pick-and-place machine, capable of handling many different shapes, sizes, and weights.  
+The data are taken every 10 ms, most from the PLC tags.  
+Because of the real industrial nature of the dataset, the information names are anonymised.  
+  
+Input and output data: about 96 features  
+  
+Input (some):  
+5) sensor measurement: 'IO.ToolTemperature'  
+8) operational setting: 'Sequence.SoftTouchActuator'  
+28) operational setting: 'IO.VacuumValveON'  
+31) operational setting: 'IO.SpeedVacuumMotor'  
+38) operational setting: 'VacuumBlower.CMD.SpeedHz'  
+39) operational setting: 'Vacuum.Stat.ActSpeedHz’  
+41) operational setting: 'Actuator.Speed'  
+42) operational setting: 'Actuator.CurrentSpeed'  
+43) operational setting: 'Actuator.CurrentForce'  
+47) sensor measurement: 'VibrationValue'  
+52) operational setting: 'IO.LiftHeadSensor1NC'  
+  
+Output data:  
+66) sensor measurement: 'Alarm.ItemDroppedError’  
+(When the machine drops an item (variable 'Alarm.ItemDroppedError’ = 1), it is considered that an error occurs.)  
 
 Analysis points:  
-- Given the input data information, how to automatically detect type of defects.  
-- Show the priority of each input data for detecting the defect (operators might focus more on controlling such input variables).
+- Find priority of input factors  
+- Summarizing the range of input variable values for normal and error cases (plot them), then find general differences, if possible.  
+- Suppose that the machine is calibrated with new operational settings (we could create some noise/change in the operational input factors, we try to observe whether the machine will operate in normal or error state.
