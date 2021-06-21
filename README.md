@@ -10,3 +10,5 @@ Analysis points: Range of input values to produce each output in lower quartile 
 - Individual observation only for BSFC
 - Individual observation only for NOx
 - Simultaneous observation for BSFC and NOx (e.g., using a weighted function)
+  
+![image](https://user-images.githubusercontent.com/42261330/122784178-31d42180-d2ed-11eb-804b-895252c80110.png)
