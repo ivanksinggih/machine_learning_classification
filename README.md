@@ -14,7 +14,7 @@ V8: Sum_of_Luminosity
 V9: Minimum_of_Luminosity  
 V10: Maximum_of_Luminosity  
 V11: Length_of_Conveyer  
-V12: TypeOfSteel_A300(X)  
+V12: TypeOfSteel_A300(X) 
 V13: TypeOfSteel_A400(X)  
 V14: Steel_Plate_Thickness  
 V15: Edges_Index(X)  
