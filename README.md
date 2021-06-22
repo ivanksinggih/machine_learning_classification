@@ -28,7 +28,7 @@ V22: LogOfAreas
 V23: Log_X_Index(X)  
 V24: Log_Y_Index(X)  
 V25: Orientation_Index(X)   
-V26: Luminosity_Index  
+V26: Luminosity_Index(X: negative value)  
 V27: SigmoidOfAreas  
   
 **[Note] (Selected input data characteristic: nominal data type (e.g., small = little amount, large = a lot of amount), not class type (e.g., class 1, class 2, …)**
