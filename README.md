@@ -41,7 +41,7 @@ Output data: 6 types of defects (V28)
 5: Dirtiness  
 6: Bumps
 
-![image](https://user-images.githubusercontent.com/42261330/122784006-09e4be00-d2ed-11eb-9903-0a3b383be229.png)
+![image](https://user-images.githubusercontent.com/42261330/122845757-5658e980-d33f-11eb-9a0c-4888ebfd395d.png)  
 
 Analysis points:  
 - Given the input data information, how to automatically detect type of defects.  
