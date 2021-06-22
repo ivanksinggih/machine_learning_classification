@@ -8,19 +8,42 @@ Because of the real industrial nature of the dataset, the information names are 
   
 Input and output data: about 96 features  
   
-Input (some):  
-5) sensor measurement: 'IO.ToolTemperature'  
-8) operational setting: 'Sequence.SoftTouchActuator'  
-28) operational setting: 'IO.VacuumValveON'  
-31) operational setting: 'IO.SpeedVacuumMotor'  
-38) operational setting: 'VacuumBlower.CMD.SpeedHz'  
-39) operational setting: 'Vacuum.Stat.ActSpeedHz’  
-41) operational setting: 'Actuator.Speed'  
-42) operational setting: 'Actuator.CurrentSpeed'  
-43) operational setting: 'Actuator.CurrentForce'  
-47) sensor measurement: 'VibrationValue'  
-52) operational setting: 'IO.LiftHeadSensor1NC'  
+Input: sensor measurement(not considered), operational setting  
   
+Operational setting input data:  
+8) 'Sequence.SoftTouchActuator'(X)  
+9) 'Sequence.WantedSoleHeight'  
+17) 'BellowSoftTouch.AdjustStep'(X)  
+18) 'BellowSoftTouch.iWantedDest'(X)  
+28) 'IO.VacuumValveON'  
+29) 'IO.VacuumValveOFF'(X)  
+30) 'IO.BellowPressure'  
+31) 'IO.SpeedVacuumMotor'(X)  
+32) 'IO.SoleVacuum'(X)  
+35) 'Status.ElementStatus’(X)  
+36) 'Status.MachineStatus'(X)  
+37) 'Statistics.SequenceNr'(X)  
+38) 'VacuumBlower.CMD.SpeedHz'  
+39) 'Vacuum.Stat.ActSpeedHz'  
+41) 'Actuator.Speed'  
+42) 'Actuator.CurrentSpeed'  
+43) 'Actuator.CurrentForce'  
+44) 'Actuator.CurrentPos'(X)  
+45) 'Actuator.TargetPos'(X)  
+46) 'Actuator.WantedBellowPressure’(X)  
+48) 'IO.RakeForcedVacuumON'  
+49) 'IO.RakeForcedVacuumOFF'(X)  
+50) 'IO.ChangeOverValveON'  
+51) 'IO.ChangeOverValveOFF'(X)  
+52) 'IO.LiftHeadSensor1NC’ (X: same values)  
+53) 'IO.LiftHeadSensor2NC' (X: same values)  
+54) 'Operation.Setting.0'(X)  
+76) 'Operation.Setting.15'(X)  
+77) 'Operation.Setting.16'(X)  
+78) 'Operation.Setting.17'(X)  
+
+
+
 Output data:  
 66) sensor measurement: 'Alarm.ItemDroppedError’  
 (When the machine drops an item (variable 'Alarm.ItemDroppedError’ = 1), it is considered that an error occurs.)  
