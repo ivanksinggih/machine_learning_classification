@@ -33,13 +33,13 @@ V27: SigmoidOfAreas
   
 **[Note] (Selected input data characteristic: nominal data type (e.g., small = little amount, large = a lot of amount), not class type (e.g., class 1, class 2, …)**
 
-Output data: 6 types of defects  
-V28: Pastry  
-V29: Z_Scratch  
-V30: K_Scatch  
-V31: Stains  
-V32: Dirtiness  
-V33: Bumps
+Output data: 6 types of defects (V28)  
+1: Pastry  
+2: Z_Scratch  
+3: K_Scatch  
+4: Stains  
+5: Dirtiness  
+6: Bumps
 
 ![image](https://user-images.githubusercontent.com/42261330/122784006-09e4be00-d2ed-11eb-9903-0a3b383be229.png)
 
