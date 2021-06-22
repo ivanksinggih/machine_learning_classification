@@ -14,23 +14,25 @@ V8: Sum_of_Luminosity
 V9: Minimum_of_Luminosity  
 V10: Maximum_of_Luminosity  
 V11: Length_of_Conveyer  
-V12: TypeOfSteel_A300  
-V13: TypeOfSteel_A400  
+V12: TypeOfSteel_A300(X)  
+V13: TypeOfSteel_A400(X)  
 V14: Steel_Plate_Thickness  
-V15: Edges_Index  
-V16: Empty_Index  
-V17: Square_Index  
-V18: Outside_X_Index  
-V19: Edges_X_Index  
-V20: Edges_Y_Index  
-V21: Outside_Global_Index  
+V15: Edges_Index(X)  
+V16: Empty_Index(X)  
+V17: Square_Index(X)  
+V18: Outside_X_Index(X)  
+V19: Edges_X_Index(X)  
+V20: Edges_Y_Index(X)  
+V21: Outside_Global_Index(X)  
 V22: LogOfAreas  
-V23: Log_X_Index  
-V24: Log_Y_Index  
-V25: Orientation_Index   
+V23: Log_X_Index(X)  
+V24: Log_Y_Index(X)  
+V25: Orientation_Index(X)   
 V26: Luminosity_Index  
 V27: SigmoidOfAreas  
   
+**[Note] (Selected input data characteristic: nominal data type (e.g., small = little amount, large = a lot of amount), not class type (e.g., class 1, class 2, …)**
+
 Output data: 6 types of defects  
 V28: Pastry  
 V29: Z_Scratch  
