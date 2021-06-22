@@ -41,9 +41,9 @@ Operational setting input data:
 76) 'Operation.Setting.15'(X)  
 77) 'Operation.Setting.16'(X)  
 78) 'Operation.Setting.17'(X)  
-
-
-
+  
+**[Note] (Selected input data characteristic: nominal data type (e.g., small = little amount, large = a lot of amount), not class type (e.g., class 1, class 2, …)**
+  
 Output data:  
 66) sensor measurement: 'Alarm.ItemDroppedError’  
 (When the machine drops an item (variable 'Alarm.ItemDroppedError’ = 1), it is considered that an error occurs.)  
