@@ -5,6 +5,7 @@ Source: https://www.kaggle.com/paresh2047/uci-semcom?select=uci-secom.csv
 The data are collected using continuously observing sensors in a complex semiconductor manufacturing system.  
 - Some input features are irrelevant, and can be considered as noise.  
 - Engineers typically have a much larger number of signals than are actually required.  
+  
 It is necessary to perform feature selection to identify the most relevant signals.  
 - The Process Engineers may then use these signals to determine key factors contributing to yield excursions downstream in the process.  
 - This will enable an increase in process throughput, decreased time to learning and reduce the per unit production costs.  
